@@ -1,0 +1,349 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.banner {
+  font-size: 10px;
+  width: 100%; }
+
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: anton;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.container-icon{
+    position: absolute;
+    margin-left:16%;
+    margin-top:3.2%;
+}
+
+.titulo
+    {
+        font-size: 2.5rem;
+        font-family: anton;
+        letter-spacing: 2px;
+        font-style: italic;
+        margin-top: 3%;
+        color: #000000;
+        margin-left: 22%;
+         }
+
+.titulo2
+    {
+        font-size: 2.5rem;
+        font-family: anton;
+        letter-spacing: 2px;
+        font-style: italic;
+        margin-top: 3%;
+        color: #000000;
+        margin-left: 10%;
+         }
+         
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: right;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+.chatWhasapp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;}
+
+/* Main */
+
+
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding:10px
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+
+.hidden{
+    display: none;
+}
+
+/*Comentrios*/
+
+#comments-container {
+  width: 70%;
+  margin-left: 13%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.comment-container {
+  border-radius: 25px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  background-color: #F8C216;
+}
+
+.responses-container {
+  margin-top: 1%;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.responses-container .comment-container {
+  background-color: #000000;
+  color: white;
+}
+
+.input {
+    margin-top:1%;
+  padding: 3% 40.5%;
+  border: solid 2px #000000;
+  border-radius: 25px;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #5d5f61;
+  color: white;
+}
+
+
+
+/*FOOTER*/
+.RedesSociales {
+    margin-top: 40px;
+    height: 20vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; }
+    .RedesSociales .ContenedorIconosRedes {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .RedesSociales .ContenedorIconosRedes .icon {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin: 20px;
+        border-radius: 50%;
+        transition: all .8s;
+        cursor: pointer; }
+        .RedesSociales .ContenedorIconosRedes .icon i {
+          color: black;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 1.7rem; }
+        .RedesSociales .ContenedorIconosRedes .icon:hover {
+          background-color: #d21071;
+          box-shadow: 0 0 20px #d21071; }
+        .RedesSociales .ContenedorIconosRedes .icon:hover:nth-child(2) {
+          background-color: #1877f2;
+          box-shadow: 0 0 20px #1877f2; }
+        .RedesSociales .ContenedorIconosRedes .icon:hover:nth-child(3) {
+          background-color: #06b848;
+          box-shadow: 0 0 20px #06b848; }
+        .RedesSociales .ContenedorIconosRedes .icon:hover:nth-child(4) {
+          background-color: #1da1f2;
+          box-shadow: 0 0 20px #1da1f2; }
+        .RedesSociales .ContenedorIconosRedes .icon:hover circle {
+          stroke-dasharray: 220; }
+        .RedesSociales .ContenedorIconosRedes .icon svg circle {
+          stroke-dasharray: 150;
+          transition: all .8s ease-in-out; }
+  
+  .derechos {
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    padding-bottom: 30px; }
